@@ -1,10 +1,10 @@
 const ftoc = function(temp) {
-  newTemp =  (9 / 5) * (temp - 32);
+  newTemp = (temp - 32) * 5 / 9;
   return Math.round(newTemp * 10) / 10;
 };
 
 const ctof = function(temp) {
-  newTemp = temp * (9 / 5) + 32;
+  newTemp = (temp * 9 / 5) + 32;
   return Math.round(newTemp * 10) / 10;
 };
 
